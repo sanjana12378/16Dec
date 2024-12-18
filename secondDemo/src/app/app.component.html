@@ -1,0 +1,44 @@
+<h1>Welcome</h1>
+
+<!-- *ngIf -->
+<h1 *ngIf="myvar">hello</h1>
+
+<!-- ngielse -->
+ <h1 *ngIf="myvar else elseBlock">myvar is true</h1>
+ <ng-template #elseBlock>
+    <h2>Myvar is false</h2>
+ </ng-template>
+
+ <!-- Condition with string -->
+  <h2 *ngIf="myvar=='yes'; then ifblock else elseblock"></h2>
+  <ng-template #ifblock>
+    <h1>This is if block</h1>
+  </ng-template>
+
+  <ng-template #elseblock>
+    <h2>This is else block</h2>
+  </ng-template>
+
+  <!-- ElseIf(multiple condition) -->
+   <!-- <ng-template [ngIf]="mycolor=='red'">
+    <h2 style="color:red;">Red color</h2>
+   </ng-template>
+
+   <ng-template [ngIf]="mycolor=='yellow'">
+    <h2 style="color:yellow;">yellow color</h2>
+   </ng-template>
+
+   <ng-template [ngIf]="mycolor=='green'">
+    <h2 style="color:green;">Green color</h2>
+   </ng-template> -->
+
+   <!-- <div [ngSwitch]="mycolor">
+     <h2 style="color:red" *ngSwitchCase="red">Red color</h2>
+     <h2 style="color:pink" *ngSwitchCase="pink">pink color</h2>
+     <h2 style="color:black" *ngSwitchCase="black">black color</h2>
+     <h2 style="color:yellow" *ngSwitchCase="yellow">yellow color</h2>
+     <h2 style="color:purple" *ngSwitchCase="purple">purple color</h2>
+     <h2 style="color:red" *ngSwitchDefault>Default case</h2>
+
+
+   </div> -->

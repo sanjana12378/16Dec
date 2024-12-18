@@ -1,0 +1,25 @@
+
+
+<app-bhavana></app-bhavana>
+
+
+
+<!-- <h1>addition is: {{a+b}}</h1> -->
+<h2>{{display()}}</h2>
+<h3>{{obj1.a}}</h3>
+<h4>{{arr[1]}}</h4>
+
+
+<input type="text" placeholder="Enter A" #a><br>
+<input type="text" placeholder="Enter B" #b><br>
+<button (click)="add(a.value,b.value)">Submit</button>
+
+<a routerLink="HomeLink">Myhome</a> |
+<a routerLink="AboutLink">AboutUs</a> |
+<a routerLink="ContactLink">Contact</a> |
+<a routerLink="ServiceLink">Service</a>
+
+<router-outlet></router-outlet>
+
+<button (click)="getName()">Click Here</button>
+<button (click) ="displays('sanjana')">submit</button>
